@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ghost]]></title><description><![CDATA[The professional publishing platform]]></description><link>https://gatsby-casper.netlify.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 23 Jun 2019 11:32:14 GMT</lastBuildDate><item><title><![CDATA[XConf Review - Economics of Software Quality]]></title><description><![CDATA[Mr Martin Fowler was one of the founding members of the Agile Manifesto, author of many books including my favourite Refactoring (1st…]]></description><link>https://gatsby-casper.netlify.com/xconf-review-economics-of-software-quality/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/xconf-review-economics-of-software-quality/</guid><pubDate>Mon, 29 Apr 2019 12:46:00 GMT</pubDate><content:encoded>&lt;p&gt;Mr Martin Fowler was one of the founding members of the Agile Manifesto, author of many books including my favourite Refactoring (1st edition was written in Java, and the latest edition in Javascript), and a great speaker at many conferences. I learned a lot from watching his talks at the previous GOTO conferences. Hence, when I found out that he is coming to Singapore to speak at the first Singapore’s XConf, I immediately signed up for the tickets.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/05da5048742e77a6e1dc246b02ce52b4/d8f93/IMG__0304.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 49.15674603174603%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB5jYJLUTA/wD/xAAZEAACAwEAAAAAAAAAAAAAAAACEgADECH/2gAIAQEAAQUCsRQEJxt//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BV//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AUf/xAAaEAACAgMAAAAAAAAAAAAAAAAAEQEgISJx/9oACAEBAAY/AtWzKJ7T/8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAIRAxcaH/2gAIAQEAAT8hp9jMo+hlQhLRYVwz/9oADAMBAAIAAwAAABAMz//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxCph//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCLp//EABsQAQEAAwEBAQAAAAAAAAAAAAERACExQVHB/9oACAEBAAE/EDyrO5F+mtbxuy07k0WK2EkOYg2liBiPB5hCQDX7n//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Same title, different contents each time!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/05da5048742e77a6e1dc246b02ce52b4/4acc0/IMG__0304.jpg&quot;
+        srcset=&quot;/static/05da5048742e77a6e1dc246b02ce52b4/e33f8/IMG__0304.jpg 293w,
+/static/05da5048742e77a6e1dc246b02ce52b4/d5ce0/IMG__0304.jpg 585w,
+/static/05da5048742e77a6e1dc246b02ce52b4/4acc0/IMG__0304.jpg 1170w,
+/static/05da5048742e77a6e1dc246b02ce52b4/04b0f/IMG__0304.jpg 1755w,
+/static/05da5048742e77a6e1dc246b02ce52b4/a5746/IMG__0304.jpg 2340w,
+/static/05da5048742e77a6e1dc246b02ce52b4/d8f93/IMG__0304.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;Same title, different contents each time!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Mr Fowler liked to use the overarching title “Software Development in the 21st Century” for his various talks, but the contents of each of those talks would vary. This time, it consisted of 2 topics: a) Economics of Software Quality and b) Practices for an Agile Codebase.&lt;/p&gt;
+&lt;h3&gt;Economics of Software Quality&lt;/h3&gt;
+&lt;p&gt;Mr Fowler started off in a rather humorous manner, mimicking his counterpart Mr Robert C. Martin (which the fraternity called as Uncle Bob), about how absolute and loud Uncle Bob would detest when bad or buggy software was allowed to be released. It is a heinous sin to commit, and no one must do that, he would say. Mr Fowler would, however, take a more measured approach to evaluate such an issue.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/53fe0a2cca036b70430f665fce9af920/d8f93/IMG__0307.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 43.179563492063494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAEu9DwrhU//xAAaEAACAgMAAAAAAAAAAAAAAAABAgADEkFC/9oACAEBAAEFAnKYIaRBYqzib//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGxr//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMf//EABoQAAICAwAAAAAAAAAAAAAAAAABITECEEH/2gAIAQEABj8ChSKi+me//8QAHRABAAIBBQEAAAAAAAAAAAAAAQARMRAhUWGBof/aAAgBAQABPyFlaWZ5jFqvZDU2Wn7pufY5T//aAAwDAQACAAMAAAAQ/C//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8Q2IQZf//EABYRAQEBAAAAAAAAAAAAAAAAAAABIf/aAAgBAgEBPxCmn//EAB0QAQACAQUBAAAAAAAAAAAAAAEAEaFBUWFx8MH/2gAIAQEAAT8QNJrm125jHuDdWIIiaMdFViHjsnp0TP8Ak//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Mr Fowler mimicking Uncle Bob.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/53fe0a2cca036b70430f665fce9af920/4acc0/IMG__0307.jpg&quot;
+        srcset=&quot;/static/53fe0a2cca036b70430f665fce9af920/e33f8/IMG__0307.jpg 293w,
+/static/53fe0a2cca036b70430f665fce9af920/d5ce0/IMG__0307.jpg 585w,
+/static/53fe0a2cca036b70430f665fce9af920/4acc0/IMG__0307.jpg 1170w,
+/static/53fe0a2cca036b70430f665fce9af920/04b0f/IMG__0307.jpg 1755w,
+/static/53fe0a2cca036b70430f665fce9af920/a5746/IMG__0307.jpg 2340w,
+/static/53fe0a2cca036b70430f665fce9af920/d8f93/IMG__0307.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;Mr Fowler mimicking Uncle Bob.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;He reasoned that for non technical people such as business owners, they have their set of problems to address and targets to meet. When they look at software as a product, they would view the customer facing features and the underlying software quality as items that are “tradable”. Taking 3 main points — Pleasant user interface, Few defects, Good modular architecture — as example, it would be common for business owners to draw the line and separate Good modular architecture from the other two.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a774b30db614429cb7d10b50071183b5/d8f93/IMG__0310.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.287698412698404%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAQKKea0LLj//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADBBQxM//aAAgBAQABBQKwoYNcVjJZQ3kvZ//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGxr//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/ARn/xAAaEAEAAgMBAAAAAAAAAAAAAAABABAREjFR/9oACAEBAAY/AjUx7Hm2IA8or//EABoQAAIDAQEAAAAAAAAAAAAAAAERACExEGH/2gAIAQEAAT8hRS+xcWzuVFuVlwWzLs//2gAMAwEAAgADAAAAEPPf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERcf/aAAgBAwEBPxCzRg//xAAXEQADAQAAAAAAAAAAAAAAAAAAARFh/9oACAECAQE/EJpk0//EAB4QAAICAgIDAAAAAAAAAAAAAAEhABExsUFhcaHB/9oACAEBAAE/EBZEsM2bPXMbzSAkQniVUBAoB8mxue4dQZPmf//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Drawing the line between external and internal qualities of a software.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a774b30db614429cb7d10b50071183b5/4acc0/IMG__0310.jpg&quot;
+        srcset=&quot;/static/a774b30db614429cb7d10b50071183b5/e33f8/IMG__0310.jpg 293w,
+/static/a774b30db614429cb7d10b50071183b5/d5ce0/IMG__0310.jpg 585w,
+/static/a774b30db614429cb7d10b50071183b5/4acc0/IMG__0310.jpg 1170w,
+/static/a774b30db614429cb7d10b50071183b5/04b0f/IMG__0310.jpg 1755w,
+/static/a774b30db614429cb7d10b50071183b5/a5746/IMG__0310.jpg 2340w,
+/static/a774b30db614429cb7d10b50071183b5/d8f93/IMG__0310.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;Drawing the line between external and internal qualities of a software.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Depending on the resources available, business owners would adjust that line and give what bandwidth was left after developing the features to touch up on the Internal Quality. While this approach does help to accelerate the product’s time-to-market, this momentum would be short-lived — as short as within a few weeks. Design Stamina Hypothesis, he explained with a parabolic chart, charts out how a software with no or poor architecture design would have quick growth in cumulative functionality at the beginning, but would slow down logarithmically as the time of the project stretches.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/73daa3544bc3f346f50626fac54b339a/d8f93/IMG__0312.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 44.717261904761905%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAESyHD0LLsv/8QAGxAAAQUBAQAAAAAAAAAAAAAAAQACAwQRMkH/2gAIAQEAAQUCkLCtrCIWH4efV//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGxr//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGVj//EABsQAAIDAAMAAAAAAAAAAAAAAAERAAIhEBJR/9oACAEBAAY/Agqr2WQHZZkCOCDn/8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAECExQXH/2gAIAQEAAT8hL9vrcWGBekVjIQzSOlf/2gAMAwEAAgADAAAAEEc//8QAFxEBAAMAAAAAAAAAAAAAAAAAABFBUf/aAAgBAwEBPxC9DH//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEVH/2gAIAQIBAT8Qda//xAAcEAEAAgIDAQAAAAAAAAAAAAABACERMVGxwaH/2gAIAQEAAT8QHDIHBIM274zqVGatzSrSoLFQxE1XE6Xc+N9j5P/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;The 2 chart lines for Design Stamina Hypothesis.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/73daa3544bc3f346f50626fac54b339a/4acc0/IMG__0312.jpg&quot;
+        srcset=&quot;/static/73daa3544bc3f346f50626fac54b339a/e33f8/IMG__0312.jpg 293w,
+/static/73daa3544bc3f346f50626fac54b339a/d5ce0/IMG__0312.jpg 585w,
+/static/73daa3544bc3f346f50626fac54b339a/4acc0/IMG__0312.jpg 1170w,
+/static/73daa3544bc3f346f50626fac54b339a/04b0f/IMG__0312.jpg 1755w,
+/static/73daa3544bc3f346f50626fac54b339a/a5746/IMG__0312.jpg 2340w,
+/static/73daa3544bc3f346f50626fac54b339a/d8f93/IMG__0312.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;The 2 chart lines for Design Stamina Hypothesis.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Software projects which took care to set up a good design architecture may have relatively lesser features at the beginning of the project. However, because it was built with proper workflows and steady foundations, it would quickly catch up and surpass the growth rate of the former project steadily.&lt;/p&gt;
+&lt;p&gt;He gave another analogy of how software development can be viewed as a bank account with existing debts. When each new feature is built on to the software, one can choose either to incur more debt on top of this principal amount, or pay off a portion of it: that choice depends on the quality of the code that implemented the feature.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/65ce48e7da51eeec519a0a1702704ad7/d8f93/IMG__0314.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 44.59325396825397%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABlPQsLWTzb//EABgQAAMBAQAAAAAAAAAAAAAAAAECEwAQ/9oACAEBAAEFAmKFzKd2Ofv/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8Bsa//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAgMAAAAAAAAAAAAAAAABEAAREiEy/9oACAEBAAY/AuaE1WTK/8QAHBABAAIBBQAAAAAAAAAAAAAAAQBBMRARUXGh/9oACAEBAAE/IRWwuCIrgVG17MCGemn/2gAMAwEAAgADAAAAEOvP/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8QoP/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EE6Ien//xAAdEAEBAAIBBQAAAAAAAAAAAAABEQAxoRAhUXHB/9oACAEBAAE/EGUvtKa3hn4qMbStnvHhOyQgPmcLOS6f/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Technical Debt: we can choose to start paying it off, or incur more interest.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/65ce48e7da51eeec519a0a1702704ad7/4acc0/IMG__0314.jpg&quot;
+        srcset=&quot;/static/65ce48e7da51eeec519a0a1702704ad7/e33f8/IMG__0314.jpg 293w,
+/static/65ce48e7da51eeec519a0a1702704ad7/d5ce0/IMG__0314.jpg 585w,
+/static/65ce48e7da51eeec519a0a1702704ad7/4acc0/IMG__0314.jpg 1170w,
+/static/65ce48e7da51eeec519a0a1702704ad7/04b0f/IMG__0314.jpg 1755w,
+/static/65ce48e7da51eeec519a0a1702704ad7/a5746/IMG__0314.jpg 2340w,
+/static/65ce48e7da51eeec519a0a1702704ad7/d8f93/IMG__0314.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;Technical Debt: we can choose to start paying it off, or incur more interest.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Therefore, Mr Fowler plotted the attitudes people would have about such technical debts on a quadrant, segmenting between Prudent or Reckless, then Deliberate or Inadvertent. On the top right quadrant (Prudent and Deliberate), he explained that generally, well-intentioned people would have such an attitude — admitting the fact that they have incurred technical debt, but have to bite the bullet and deliver the product, and mentally aware of the problems and consequences that they need to deal with later.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fed69baeb6457764c7abded522796a91/d8f93/IMG__0317.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 44.742063492063494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAFFjBYaJHC//8QAGxAAAQQDAAAAAAAAAAAAAAAAAgABAxQTMTP/2gAIAQEAAQUCNwInr4rRqXkO1//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGxr//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPwEcn//EAB0QAAEEAgMAAAAAAAAAAAAAAAABAhESECFxgaH/2gAIAQEABj8CSG1QdEW4NL6NOsf/xAAcEAABBAMBAAAAAAAAAAAAAAABABARITFBUbH/2gAIAQEAAT8hjtksBGAsWkl4itGvob//2gAMAwEAAgADAAAAEEc//8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8QuP/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/ELxD0//EAB0QAQACAgMBAQAAAAAAAAAAAAEAESExQWFxofD/2gAIAQEAAT8QwPlcUe9+QabgZruzlJQBKAUNOqn2s1/rEePJ/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;The Technical Debt Quadrant.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fed69baeb6457764c7abded522796a91/4acc0/IMG__0317.jpg&quot;
+        srcset=&quot;/static/fed69baeb6457764c7abded522796a91/e33f8/IMG__0317.jpg 293w,
+/static/fed69baeb6457764c7abded522796a91/d5ce0/IMG__0317.jpg 585w,
+/static/fed69baeb6457764c7abded522796a91/4acc0/IMG__0317.jpg 1170w,
+/static/fed69baeb6457764c7abded522796a91/04b0f/IMG__0317.jpg 1755w,
+/static/fed69baeb6457764c7abded522796a91/a5746/IMG__0317.jpg 2340w,
+/static/fed69baeb6457764c7abded522796a91/d8f93/IMG__0317.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;The Technical Debt Quadrant.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;There would also be people who are totally unaware of software development best practices and the technical debt they are incurring, hence reckless but inadvertent in nature, as they do not know what they not know. What would be more upsetting, would be people who are aware of their debt, but wilfully choose not to do anything about it, essentially being deliberately reckless about the matter.&lt;/p&gt;
+&lt;p&gt;One can only get away from the consequences of such wilful stubbornness, when the term of the project is short-lived — short enough before the Design Payoff Line intersects with the project’s velocity curve. This may apply to one-off campaign-related short projects, which one does not need to worry about maintenance.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3b3ac8cb19b47bfa51448cc06367caa1/d8f93/IMG__0316.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 43.25396825396825%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAUW08BpEoH//xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIDBBMUMf/aAAgBAQABBQJuDtm8fT0zLReH/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/AU2f/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAh/9oACAECAQE/ARyf/8QAGxAAAQUBAQAAAAAAAAAAAAAAAAECERIxEKH/2gAIAQEABj8CyGi1ixvo0Xn/xAAcEAADAAEFAAAAAAAAAAAAAAAAARExIVFhgaH/2gAIAQEAAT8hRnOwRGeppyXw06GQ8Aj/2gAMAwEAAgADAAAAEDcf/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEx/9oACAEDAQE/ENSv/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxDEqX//xAAcEAEAAwADAQEAAAAAAAAAAAABABEhMaGxUXH/2gAIAQEAAT8QTRdibQzggw7MDExep8jTcACvAJ03wnXzi/s//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;The Design Payoff Line: when cutting corners in design start biting back.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3b3ac8cb19b47bfa51448cc06367caa1/4acc0/IMG__0316.jpg&quot;
+        srcset=&quot;/static/3b3ac8cb19b47bfa51448cc06367caa1/e33f8/IMG__0316.jpg 293w,
+/static/3b3ac8cb19b47bfa51448cc06367caa1/d5ce0/IMG__0316.jpg 585w,
+/static/3b3ac8cb19b47bfa51448cc06367caa1/4acc0/IMG__0316.jpg 1170w,
+/static/3b3ac8cb19b47bfa51448cc06367caa1/04b0f/IMG__0316.jpg 1755w,
+/static/3b3ac8cb19b47bfa51448cc06367caa1/a5746/IMG__0316.jpg 2340w,
+/static/3b3ac8cb19b47bfa51448cc06367caa1/d8f93/IMG__0316.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;The Design Payoff Line: when cutting corners in design start biting back.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Finally, Mr Fowler summarised, when we promise clients to build software with many features but without proper design and architecture, we are ultimately stealing money from our clients: the money — both physical capital and time costs — that the client would need to pay to maintain the software in the future. As software developers, he rallied, we should upkeep our professional ethics to not cause deceit and harm to our clients and users. With that conclusion, he ended the first part of his talk.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A Full and Comprehensive Style Test]]></title><description><![CDATA[Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs…]]></description><link>https://gatsby-casper.netlify.com/a-full-style-test/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/a-full-style-test/</guid><pubDate>Sun, 30 Sep 2018 07:03:47 GMT</pubDate><content:encoded>&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+&lt;hr&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href=&quot;&quot;&gt;test link&lt;/a&gt; adipiscing elit. &lt;strong&gt;This is strong.&lt;/strong&gt; Nullam dignissim convallis est. Quisque aliquam. &lt;em&gt;This is emphasized.&lt;/em&gt; Donec faucibus. Nunc iaculis suscipit dui. 5&lt;sup&gt;3&lt;/sup&gt; = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. &lt;cite&gt;The New York Times&lt;/cite&gt; (That’s a citation). &lt;span style=&quot;text-decoration:underline;&quot;&gt;Underline&lt;/span&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
+&lt;p&gt;&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; and &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt; are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type &lt;code class=&quot;language-text&quot;&gt;COPY filename&lt;/code&gt;. &lt;del&gt;Dinner’s at 5:00.&lt;/del&gt; &lt;span style=&quot;text-decoration:underline;&quot;&gt;Let’s make that 7&lt;/span&gt;. This &lt;del&gt;text&lt;/del&gt; has been struck.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Media&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
+&lt;h3&gt;Big Image&lt;/h3&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1080px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.3888888888889%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAdNuKx1yIr//xAAbEAADAAIDAAAAAAAAAAAAAAAAAQMCEQQSE//aAAgBAQABBQKVMVXkV6r1yENm9H//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPwFn/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAESMRARIv/aAAgBAQAGPwJ9KOhRLKKx/8QAGhABAQACAwAAAAAAAAAAAAAAAQARITFBUf/aAAgBAQABPyHgCHDEJ7d5JdqPFl6QtC//2gAMAwEAAgADAAAAEC/P/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPxCKY//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxBO2t//xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhcTFB8f/aAAgBAQABPxC41A0D99gqbNHh8ls10JY1OwEGHWCW0cn/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Test Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8bafcea43f0bc141b01ef5b43dd2003b/5792a/testimg1.jpg&quot;
+        srcset=&quot;/static/8bafcea43f0bc141b01ef5b43dd2003b/e33f8/testimg1.jpg 293w,
+/static/8bafcea43f0bc141b01ef5b43dd2003b/d5ce0/testimg1.jpg 585w,
+/static/8bafcea43f0bc141b01ef5b43dd2003b/5792a/testimg1.jpg 1080w&quot;
+        sizes=&quot;(max-width: 1080px) 100vw, 1080px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
+&lt;h3&gt;Small Image&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 300px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABhZNsvAoT/8QAGRABAAMBAQAAAAAAAAAAAAAAAgESMQAR/9oACAEBAAEFAhNSXdOfUMWd/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAACEBAhEg/9oACAEBAAY/AosNI3j/xAAaEAEAAgMBAAAAAAAAAAAAAAABACERMUFh/9oACAEBAAE/IaD1TGXEBk+kJh2PXkSUY7n/2gAMAwEAAgADAAAAEGc//8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Qh//EABYRAQEBAAAAAAAAAAAAAAAAAAARQf/aAAgBAgEBPxDUf//EABkQAQADAQEAAAAAAAAAAAAAAAEAESExQf/aAAgBAQABPxDqCqF9HjAJqYZ4bcegoXkRv1KJEYlGBeE6T//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Small Test Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b629d579b1c63df6750fc11d47141796/f6349/testimg2.jpg&quot;
+        srcset=&quot;/static/b629d579b1c63df6750fc11d47141796/e33f8/testimg2.jpg 293w,
+/static/b629d579b1c63df6750fc11d47141796/f6349/testimg2.jpg 300w&quot;
+        sizes=&quot;(max-width: 300px) 100vw, 300px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Labore et dolore.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;List Types&lt;/h2&gt;
+&lt;h3&gt;Definition List&lt;/h3&gt;
+&lt;p&gt;Definition List Title
+: This is a definition list division.&lt;/p&gt;
+&lt;p&gt;Definition
+: An exact statement or description of the nature, scope, or meaning of something: &lt;em&gt;our definition of what constitutes poetry.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Ordered List&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List Item 2&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Nested list item A&lt;/li&gt;
+&lt;li&gt;Nested list item B&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Unordered List&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List Item 2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nested list item A&lt;/li&gt;
+&lt;li&gt;Nested list item B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Table&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Table Header 1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Table Header 2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Table Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Division 1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Division 1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Division 1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;Preformatted Text&lt;/h2&gt;
+&lt;p&gt;Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users.&lt;/p&gt;
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;p&gt;Code can be presented inline, like &lt;code class=&quot;language-text&quot;&gt;&amp;lt;?php bloginfo(&amp;#39;stylesheet_url&amp;#39;); ?&amp;gt;&lt;/code&gt;, or using &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;jekyll’s highlight
+filter&lt;/a&gt; to
+highlight a block of code. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; left&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 -240px 0 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. — &lt;a href=&quot;http://en.wikipedia.org/wiki/HAL_9000&quot;&gt;HAL 9000&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And here’s a bit of trailing text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Text-level semantics&lt;/h2&gt;
+&lt;p&gt;&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; elements&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;#&quot;&gt;a element&lt;/a&gt; example &lt;br&gt;
+The &lt;abbr&gt;abbr element&lt;/abbr&gt; and &lt;abbr title=&quot;Title text&quot;&gt;abbr element with title&lt;/abbr&gt; examples &lt;br&gt;
+The &lt;b&gt;b element&lt;/b&gt; example &lt;br&gt;
+The &lt;cite&gt;cite element&lt;/cite&gt; example &lt;br&gt;
+The &lt;code&gt;code element&lt;/code&gt; example &lt;br&gt;
+The &lt;del&gt;del element&lt;/del&gt; example &lt;br&gt;
+The &lt;dfn&gt;dfn element&lt;/dfn&gt; and &lt;dfn title=&quot;Title text&quot;&gt;dfn element with title&lt;/dfn&gt; examples &lt;br&gt;
+The &lt;em&gt;em element&lt;/em&gt; example &lt;br&gt;
+The &lt;i&gt;i element&lt;/i&gt; example &lt;br&gt;
+The &lt;ins&gt;ins element&lt;/ins&gt; example &lt;br&gt;
+The &lt;kbd&gt;kbd element&lt;/kbd&gt; example &lt;br&gt;
+The &lt;mark&gt;mark element&lt;/mark&gt; example &lt;br&gt;
+The &lt;q&gt;q element &lt;q&gt;inside&lt;/q&gt; a q element&lt;/q&gt; example &lt;br&gt;
+The &lt;s&gt;s element&lt;/s&gt; example &lt;br&gt;
+The &lt;samp&gt;samp element&lt;/samp&gt; example &lt;br&gt;
+The &lt;small&gt;small element&lt;/small&gt; example &lt;br&gt;
+The &lt;span&gt;span element&lt;/span&gt; example &lt;br&gt;
+The &lt;strong&gt;strong element&lt;/strong&gt; example &lt;br&gt;
+The &lt;sub&gt;sub element&lt;/sub&gt; example &lt;br&gt;
+The &lt;sup&gt;sup element&lt;/sup&gt; example &lt;br&gt;
+The &lt;var&gt;var element&lt;/var&gt; example &lt;br&gt;
+The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
+* * *
+&lt;h2&gt;Embeds&lt;/h2&gt;
+&lt;p&gt;Sometimes all you want to do is embed a little love from another location and set your post alive.&lt;/p&gt;
+&lt;h3&gt;Video&lt;/h3&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+          &lt;div
+            class=&quot;gatsby-resp-iframe-wrapper&quot;
+            style=&quot;padding-bottom: 56.166666666666664%; position: relative; height: 0; overflow: hidden;margin-bottom: 1rem&quot;
+          &gt;
+            &lt;iframe src=&quot;//player.vimeo.com/video/103224792&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen style=&quot;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          &quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;585245d01ee1013238737e42b879906f&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3&gt;Audio&lt;/h3&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/52891122&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;bcqhe&quot; data-default-tab=&quot;result&quot; data-user=&quot;rglazebrook&quot; class=&apos;codepen&apos;&gt;See the Pen &lt;a href=&apos;http://codepen.io/rglazebrook/pen/bcqhe/&apos;&gt;Simple Rotating Spinner&lt;/a&gt; by Rob Glazebrook (&lt;a href=&apos;http://codepen.io/rglazebrook&apos;&gt;@rglazebrook&lt;/a&gt;) on &lt;a href=&apos;http://codepen.io&apos;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Isn’t it beautiful.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Welcome to Ghost]]></title><description><![CDATA[👋 Welcome, it’s great to have you here.We know that first impressions are important, so we’ve populated your new site with some initial…]]></description><link>https://gatsby-casper.netlify.com/welcome/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/welcome/</guid><pubDate>Sun, 06 May 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;👋 Welcome, it’s great to have you here.&lt;/p&gt;
+&lt;p&gt;We know that first impressions are important, so we’ve populated your new site with some initial &lt;strong&gt;getting started&lt;/strong&gt; posts that will help you get familiar with everything in no time. This is the first one!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A few things you should know upfront&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ghost is designed for ambitious, professional publishers who want to actively build a business around their content. That’s who it works best for. &lt;/li&gt;
+&lt;li&gt;The entire platform can be modified and customised to suit your needs. It’s very powerful, but does require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who just want a simple personal blog. &lt;/li&gt;
+&lt;li&gt;For the best experience we recommend downloading the Ghost Desktop App for your computer, which is the best way to access your Ghost site on a desktop device. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ghost is made by an independent non-profit organisation called the Ghost Foundation. We are 100% self funded by revenue from our Ghost(Pro) service, and every penny we make is re-invested into funding further development of free, open source technology for modern publishing.  &lt;/p&gt;
+&lt;p&gt;The version of Ghost you are looking at right now would not have been made possible without generous contributions from the open source community.  &lt;/p&gt;
+&lt;h2&gt;Next up, the editor&lt;/h2&gt;
+&lt;p&gt;The main thing you’ll want to read about next is probably: the Ghost editor. This is where the good stuff happens.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By the way, once you’re done reading, you can simply delete the default &lt;strong&gt;Ghost&lt;/strong&gt; user from your team to remove all of these introductory posts! &lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Google AMP Roadshow SG 2017]]></title><description><![CDATA[It was an exciting day at Google as we checked out the new features rolled out by the AMP project team in the recent months! Before…]]></description><link>https://gatsby-casper.netlify.com/google-amp-roadshow-sg-2017/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/google-amp-roadshow-sg-2017/</guid><pubDate>Mon, 09 Oct 2017 00:00:01 GMT</pubDate><content:encoded>&lt;p&gt;It was an exciting day at Google as we checked out the new features rolled out by the AMP project team in the recent months! Before everything else, we started by filling up our tanks with sumptuous breakfast and aromatic coffee.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2f931286579585c33c30550d61b929f8/2e52d/amp2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAADBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABHsNeXOmRf//EABsQAAMAAgMAAAAAAAAAAAAAAAECAwAEEiEi/9oACAEBAAEFArMGoZHj3i1KvXYRpLDz/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAES/9oACAEDAQE/AWa//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAESMf/aAAgBAgEBPwHFof/EABwQAAICAgMAAAAAAAAAAAAAAAABAhEiMRNRYf/aAAgBAQAGPwKKiq9Y+Kbs2KTyrswtSezJ0f/EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQWH/2gAIAQEAAT8hb671VcEfWRxcVqtn2AcPmElHNuEuCic0T//aAAwDAQACAAMAAAAQtM//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QXVWGNv/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxDMASV//8QAHRABAQADAAIDAAAAAAAAAAAAAREAITFBgVFhcf/aAAgBAQABPxAo43qWkZ2YyKYtO0Y3XvEpI7VV95xdlVvxfzBw3BS+Zj98yFwwAweZ/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;A good day starts with good coffee (and breakfast)!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2f931286579585c33c30550d61b929f8/4acc0/amp2.jpg&quot;
+        srcset=&quot;/static/2f931286579585c33c30550d61b929f8/e33f8/amp2.jpg 293w,
+/static/2f931286579585c33c30550d61b929f8/d5ce0/amp2.jpg 585w,
+/static/2f931286579585c33c30550d61b929f8/4acc0/amp2.jpg 1170w,
+/static/2f931286579585c33c30550d61b929f8/2e52d/amp2.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;A good day starts with good coffee (and breakfast)!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 36.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHFImrQV//EABkQAQACAwAAAAAAAAAAAAAAAAEDEwACEf/aAAgBAQABBQKsrNThESZ//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AZGP/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Bqv/EABkQAQEAAwEAAAAAAAAAAAAAAAEAAhIhMf/aAAgBAQAGPwLqXhbGAX//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhMUFR/9oACAEBAAE/IXhYu7DZvLZ5AqA9DP/aAAwDAQACAAMAAAAQfC//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QDcgX/8QAFhEBAQEAAAAAAAAAAAAAAAAAAREA/9oACAECAQE/EFy5d3//xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMUFRYf/aAAgBAQABPxAyQCKW5ovmIEFU9TtuGeMSQ18uf//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Pano shot by Joey Rozier (https://twitter.com/mrjoro/status/916127492183752704)&quot;
+        title=&quot;&quot;
+        src=&quot;/static/359e14836e60b970411a9cee2a3db2dd/4acc0/amp3.jpg&quot;
+        srcset=&quot;/static/359e14836e60b970411a9cee2a3db2dd/e33f8/amp3.jpg 293w,
+/static/359e14836e60b970411a9cee2a3db2dd/d5ce0/amp3.jpg 585w,
+/static/359e14836e60b970411a9cee2a3db2dd/4acc0/amp3.jpg 1170w,
+/static/359e14836e60b970411a9cee2a3db2dd/e6d48/amp3.jpg 1200w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+&lt;small&gt;&lt;i&gt;Pano shot by Joey Rozier (&lt;a href=&quot;https://twitter.com/mrjoro/status/916127492183752704&quot;&gt;https://twitter.com/mrjoro/status/916127492183752704&lt;/a&gt;)&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;It was a fairly packed auditorium as folks from various companies, including SPH, Tech in Asia and etc, as well as folks from other countries like Malaysia were there too. Everyone was there to find out what is coming up next for AMP.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/14c9f10d6e5585743b8d8fe090ae7308/2e52d/amp4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQAEBv/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAEPogNkpxkH/8QAHRAAAQMFAQAAAAAAAAAAAAAAAwACEQEEEhMUIf/aAAgBAQABBQJnr9AVzhU4rpNFLk0f/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEREv/aAAgBAwEBPwGmZf/EABcRAAMBAAAAAAAAAAAAAAAAAAABERL/2gAIAQIBAT8BqNI//8QAGxAAAgEFAAAAAAAAAAAAAAAAAAEzAhEyQWH/2gAIAQEABj8CpXSFkTFbRmyRn//EABwQAAICAgMAAAAAAAAAAAAAAAABESHR8TGh8P/aAAgBAQABPyFZRSmige5yeJ5LW5NMmpjtug//2gAMAwEAAgADAAAAEAM//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERQWH/2gAIAQMBAT8Qk7NT/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERMVH/2gAIAQIBAT8QgtDxP//EAB4QAQACAgEFAAAAAAAAAAAAAAEAESExQXGRodHh/9oACAEBAAE/EAYlwci6gVM91qH0iGC6qOQ3jzMZbnbpfaEm109J/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp4&quot;
+        title=&quot;&quot;
+        src=&quot;/static/14c9f10d6e5585743b8d8fe090ae7308/4acc0/amp4.jpg&quot;
+        srcset=&quot;/static/14c9f10d6e5585743b8d8fe090ae7308/e33f8/amp4.jpg 293w,
+/static/14c9f10d6e5585743b8d8fe090ae7308/d5ce0/amp4.jpg 585w,
+/static/14c9f10d6e5585743b8d8fe090ae7308/4acc0/amp4.jpg 1170w,
+/static/14c9f10d6e5585743b8d8fe090ae7308/2e52d/amp4.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Paul Bakaus opened the day with an introduction of what Google AMP is about, the project’s status timeline so far, and highlights of how various websites’ revenue have improved as they AMP-ified their webpages.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;New things in AMP&lt;/h2&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0d631df19043e426e06f0189e1c37c1d/2e52d/amp5.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAACBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHkMIiUVqP/xAAaEAACAwEBAAAAAAAAAAAAAAABAgADEgQT/9oACAEBAAEFAqU9XPJmOMPW5rc9LtHOn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EAB4QAAEEAQUAAAAAAAAAAAAAAAABAhExAxIhUWGR/9oACAEBAAY/AtMwb5L6FbwS2ym+Cqtqf//EABkQAQEBAQEBAAAAAAAAAAAAAAERACFBYf/aAAgBAQABPyH4stxAiVDLs2pdJRxO5UFAbnuMrN//2gAMAwEAAgADAAAAEGMv/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPxCpa//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8QuGP/xAAaEAEBAAMBAQAAAAAAAAAAAAABEQAhMWGB/9oACAEBAAE/EHMC1QvMYSga2r9xaYeWrM1kiaaR8ya5S8Jx7ms3FNVz/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Ooh yea~ we can do snowfall on AMP now!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0d631df19043e426e06f0189e1c37c1d/4acc0/amp5.jpg&quot;
+        srcset=&quot;/static/0d631df19043e426e06f0189e1c37c1d/e33f8/amp5.jpg 293w,
+/static/0d631df19043e426e06f0189e1c37c1d/d5ce0/amp5.jpg 585w,
+/static/0d631df19043e426e06f0189e1c37c1d/4acc0/amp5.jpg 1170w,
+/static/0d631df19043e426e06f0189e1c37c1d/2e52d/amp5.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;Ooh yea~ we can do snowfall on AMP now!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;AMP-ifying a webpage used to mean that one has to forgo zany cool features that one could have on a normal webpage — sleek animations, rich interactive components powered with Javascript codes. But this is no longer the case now! Joey Rozier showed us how the AMP project has grown with a good library of components that one can use to make one’s site interactive, as well as design really cool parallax scrolling, 3D animated features by using the &lt;code class=&quot;language-text&quot;&gt;&amp;lt;amp-animation&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;&amp;lt;amp-position-observer&amp;gt;&lt;/code&gt; components! We can check them out at www.ampstart.com.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/17d53320d5359da1835d1ddd752488d1/2e52d/amp6.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHmXR7RcYT/xAAbEAEBAAEFAAAAAAAAAAAAAAACAxIBERMUIv/aAAgBAQABBQKBLXBDapwrNaldmuVF7//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8BqWv/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BoX//xAAcEAACAgMBAQAAAAAAAAAAAAAAAQIREjFBIaH/2gAIAQEABj8Ced0lw3MlFcZcfCsvg29s/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRcf/aAAgBAQABPyEy2DrdRBOvztTdYqLmHy72W4geIznUtZ//2gAMAwEAAgADAAAAEFj/AP/EABcRAAMBAAAAAAAAAAAAAAAAAAARIWH/2gAIAQMBAT8Q0IjP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhEf/aAAgBAgEBPxCgsdP/xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMUFxoVH/2gAIAQEAAT8Qoxk02UDfcaC1Wh1CvWAqVW2Q+xZTisLR6bJxOEq+/IHGYmLXqf/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp6&quot;
+        title=&quot;&quot;
+        src=&quot;/static/17d53320d5359da1835d1ddd752488d1/4acc0/amp6.jpg&quot;
+        srcset=&quot;/static/17d53320d5359da1835d1ddd752488d1/e33f8/amp6.jpg 293w,
+/static/17d53320d5359da1835d1ddd752488d1/d5ce0/amp6.jpg 585w,
+/static/17d53320d5359da1835d1ddd752488d1/4acc0/amp6.jpg 1170w,
+/static/17d53320d5359da1835d1ddd752488d1/2e52d/amp6.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/47136e8fbcf74d0402dc50a416faa9cc/2e52d/amp7.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABx3FpFYuF/8QAGRAAAwADAAAAAAAAAAAAAAAAAQIDAAQS/9oACAEBAAEFApTNaU03mmI3Ba9GDAg//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BZ//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAQEAAwEBAAAAAAAAAAAAAAECABAREjH/2gAIAQEABj8CIPrjSzw16lRxKte6/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIUExUf/aAAgBAQABPyFAQ6Mbu0xZvyUAh4zowAys1U//2gAMAwEAAgADAAAAELf/AP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEXH/2gAIAQMBAT8Q0N0v/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARUf/aAAgBAgEBPxARt5f/xAAdEAEBAAICAwEAAAAAAAAAAAABEQAxIVFBYYGR/9oACAEBAAE/ELIMis4Lh/MoseQ694C0kyOvoE29fMIxOwJOPzXjEC1jBM//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp7&quot;
+        title=&quot;&quot;
+        src=&quot;/static/47136e8fbcf74d0402dc50a416faa9cc/4acc0/amp7.jpg&quot;
+        srcset=&quot;/static/47136e8fbcf74d0402dc50a416faa9cc/e33f8/amp7.jpg 293w,
+/static/47136e8fbcf74d0402dc50a416faa9cc/d5ce0/amp7.jpg 585w,
+/static/47136e8fbcf74d0402dc50a416faa9cc/4acc0/amp7.jpg 1170w,
+/static/47136e8fbcf74d0402dc50a416faa9cc/2e52d/amp7.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c189113a6f0b0a7a3d3e3c629f1488d3/2e52d/amp8.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAcltO7NVID//xAAZEAEBAAMBAAAAAAAAAAAAAAADAgABBBH/2gAIAQEAAQUCI9racaHHmQmzqulanef/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAwEBAAAAAAAAAAAAAAABAgAQMRES/9oACAEBAAY/AvC7CxK8FdXYQX2v/8QAGRABAQEBAQEAAAAAAAAAAAAAAREAMUFR/9oACAEBAAE/IScBfdE8ax1PmKvB7kVJ2Tdb/9oADAMBAAIAAwAAABB43//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAEDAQE/EEf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAgBAgEBPxCK/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIWFxMf/aAAgBAQABPxB7CFFoYXFiaAipzIAsjfpgqOOfGVP7FFVzMPIqot+T/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp8&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c189113a6f0b0a7a3d3e3c629f1488d3/4acc0/amp8.jpg&quot;
+        srcset=&quot;/static/c189113a6f0b0a7a3d3e3c629f1488d3/e33f8/amp8.jpg 293w,
+/static/c189113a6f0b0a7a3d3e3c629f1488d3/d5ce0/amp8.jpg 585w,
+/static/c189113a6f0b0a7a3d3e3c629f1488d3/4acc0/amp8.jpg 1170w,
+/static/c189113a6f0b0a7a3d3e3c629f1488d3/2e52d/amp8.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some of the other cool features mentioned include these components (picture above), which allows web developers to build more interactive components for the various use cases, such as newsletter sign up forms, live blogs, and autocomplete search boxes.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a829a5235ec99b65e5d22c177c2d7155/2e52d/amp9.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAGZVlMzSZkP/8QAGxAAAwACAwAAAAAAAAAAAAAAAQIDBBESExT/2gAIAQEAAQUCxpitvDPd067Ixm4vcijcn//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8BqWv/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BoX//xAAdEAACAgEFAAAAAAAAAAAAAAAAAQIhERIxMkGB/9oACAEBAAY/AlB0jmyUF0ZVMzqrwbluf//EABkQAQADAQEAAAAAAAAAAAAAAAEAESExUf/aAAgBAQABPyFUVBbJw4+2QGCjxZylGJK8y61DP1fWf//aAAwDAQACAAMAAAAQFO//xAAWEQEBAQAAAAAAAAAAAAAAAAAAYXH/2gAIAQMBAT8Qq0//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQIBAT8QkuP/xAAcEAEAAwEBAAMAAAAAAAAAAAABABEhMUFhgcH/2gAIAQEAAT8QRGA6YXBUqZnf9VKFxOhwf2H1swQqOey56yuE+ZUUgnALz4n/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;An amp component for housing analytics scripts from the various vendors.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a829a5235ec99b65e5d22c177c2d7155/4acc0/amp9.jpg&quot;
+        srcset=&quot;/static/a829a5235ec99b65e5d22c177c2d7155/e33f8/amp9.jpg 293w,
+/static/a829a5235ec99b65e5d22c177c2d7155/d5ce0/amp9.jpg 585w,
+/static/a829a5235ec99b65e5d22c177c2d7155/4acc0/amp9.jpg 1170w,
+/static/a829a5235ec99b65e5d22c177c2d7155/2e52d/amp9.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;An amp component for housing analytics scripts from the various vendors.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2f5af6580b63c84320fa4643fb17d887/2e52d/amp10.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAEVGMoqZkbb/8QAGxABAAICAwAAAAAAAAAAAAAAAgEDAAQREzH/2gAIAQEAAQUC06TclpVcZDkY+4CPP//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGMjP/EABcRAAMBAAAAAAAAAAAAAAAAAAABERL/2gAIAQIBAT8B0io//8QAHhAAAQQBBQAAAAAAAAAAAAAAAQACESEQMkFRYZH/2gAIAQEABj8CcHzXCOvBh19KS8+rZf/EABoQAQADAQEBAAAAAAAAAAAAAAEAESExUYH/2gAIAQEAAT8h4CAkAo4Hbmx9MLLxOZie5s6Pk//aAAwDAQACAAMAAAAQUM//xAAWEQEBAQAAAAAAAAAAAAAAAAABEDH/2gAIAQMBAT8QXxl//8QAGREAAQUAAAAAAAAAAAAAAAAAAAERIUFh/9oACAECAQE/EGIWzQ//xAAaEAEBAQEBAQEAAAAAAAAAAAABEQAhUWFx/9oACAEBAAE/EOPG4RqzKgpQjKC+aLswQN6WwfmZX4EGa+/uYxh5G9//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;AB testing using &lt;amp-experiment&gt;!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2f5af6580b63c84320fa4643fb17d887/4acc0/amp10.jpg&quot;
+        srcset=&quot;/static/2f5af6580b63c84320fa4643fb17d887/e33f8/amp10.jpg 293w,
+/static/2f5af6580b63c84320fa4643fb17d887/d5ce0/amp10.jpg 585w,
+/static/2f5af6580b63c84320fa4643fb17d887/4acc0/amp10.jpg 1170w,
+/static/2f5af6580b63c84320fa4643fb17d887/2e52d/amp10.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;AB testing using &lt;amp-experiment&gt;!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Additionally, web analytics and AB testing features are available too!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;AMP Ads&lt;/h2&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dd0ad524aa5d37d8b94bf734708c7fde/2e52d/amp11.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAATKvg4oMGT//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADBBESIv/aAAgBAQABBQJces0uvIgtbnRIHqf/xAAXEQADAQAAAAAAAAAAAAAAAAACEBES/9oACAEDAQE/AclV/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQACEf/aAAgBAgEBPwEvXESbP//EABoQAAIDAQEAAAAAAAAAAAAAAAERABIxAhD/2gAIAQEABj8CHSLq/VYxnJk//8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFRQf/aAAgBAQABPyFpKcl9gqi2ZJiLWpTt5xOlZpOH/9oADAMBAAIAAwAAABAr7//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAwEBPxBQI5A3/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAh/9oACAECAQE/EC7BkX//xAAcEAEBAAICAwAAAAAAAAAAAAABEQAhMUFhkfD/2gAIAQEAAT8QkpBByqxRtKHNwQb1iyzJok6PWCAWxVU8YAZw9p9zn//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp11&quot;
+        title=&quot;&quot;
+        src=&quot;/static/dd0ad524aa5d37d8b94bf734708c7fde/4acc0/amp11.jpg&quot;
+        srcset=&quot;/static/dd0ad524aa5d37d8b94bf734708c7fde/e33f8/amp11.jpg 293w,
+/static/dd0ad524aa5d37d8b94bf734708c7fde/d5ce0/amp11.jpg 585w,
+/static/dd0ad524aa5d37d8b94bf734708c7fde/4acc0/amp11.jpg 1170w,
+/static/dd0ad524aa5d37d8b94bf734708c7fde/2e52d/amp11.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Katharina, who works on the Global Publisher Platforms team at Google, then took the stage and introduced us to AMP Ads. Just as the tagline has articulated, AMP Ads strives to proliferate the creation of better and faster ads, so as to tackle the 3 main jarring issues ads are posing to users: disruptive, slow loading, and unsafe ads.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/82df67d6f0e79a9d87d5ca3242be7b0a/2e52d/amp12.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABkNrtlSjct//EABkQAQEBAAMAAAAAAAAAAAAAAAIDAQAEE//aAAgBAQABBQKU9q306AcD806XUcObn//EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAwEBPwHUf//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAgEBPwG4r//EABsQAAICAwEAAAAAAAAAAAAAAAECABEQEiIx/9oACAEBAAY/AtBC5K0MAr7LZuWl2BP/xAAbEAEAAgIDAAAAAAAAAAAAAAABABEQIUFRYf/aAAgBAQABPyEmoL3HcAtpcMyo8zaMVVqCl5Nz/9oADAMBAAIAAwAAABALz//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxDCH//EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQIBAT8Qho1P/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBYRBRwf/aAAgBAQABPxAbVLbaAL4lSOVYTrHhWxkplzvZUYjSVLPrR1HQDyPgn//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;AMP Ads uses 80% less battery than normal ads!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/82df67d6f0e79a9d87d5ca3242be7b0a/4acc0/amp12.jpg&quot;
+        srcset=&quot;/static/82df67d6f0e79a9d87d5ca3242be7b0a/e33f8/amp12.jpg 293w,
+/static/82df67d6f0e79a9d87d5ca3242be7b0a/d5ce0/amp12.jpg 585w,
+/static/82df67d6f0e79a9d87d5ca3242be7b0a/4acc0/amp12.jpg 1170w,
+/static/82df67d6f0e79a9d87d5ca3242be7b0a/2e52d/amp12.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;AMP Ads uses 80% less battery than normal ads!&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;It is amazing how much faster AMP Ads load as compared to normal ads, and even conserves battery life too!&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3807451c9add8e54dc692ebd8cea3215/2e52d/amp13.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAHIoRQUA8H/xAAZEAADAQEBAAAAAAAAAAAAAAABAgMABBH/2gAIAQEAAQUCmho9OV5pkYo9KVKeDf/EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAwEBPwHUf//EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAgEBPwHFf//EABwQAAICAgMAAAAAAAAAAAAAAAABAhEhMRASIv/aAAgBAQAGPwLpHY5OqXCccM9ywzZ//8QAGxAAAwACAwAAAAAAAAAAAAAAAAEREFEhMXH/2gAIAQEAAT8hW4Vs2NyPDMuzkj6LsLKwn4f/2gAMAwEAAgADAAAAEAw//8QAFhEAAwAAAAAAAAAAAAAAAAAAEBFB/9oACAEDAQE/EFAf/8QAFhEAAwAAAAAAAAAAAAAAAAAAEBFB/9oACAECAQE/EHQf/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARITFRYXH/2gAIAQEAAT8QrQgoujC40bq0LrXj3AHZWhDA2Cq6WVp3aPkDEx0tk//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp13&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3807451c9add8e54dc692ebd8cea3215/4acc0/amp13.jpg&quot;
+        srcset=&quot;/static/3807451c9add8e54dc692ebd8cea3215/e33f8/amp13.jpg 293w,
+/static/3807451c9add8e54dc692ebd8cea3215/d5ce0/amp13.jpg 585w,
+/static/3807451c9add8e54dc692ebd8cea3215/4acc0/amp13.jpg 1170w,
+/static/3807451c9add8e54dc692ebd8cea3215/2e52d/amp13.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Various companies have also begun adopting AMP Ads in their products.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Some thoughts&lt;/h2&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6bd42a09ac4ccc1ae5bc215cfd2eb539/2e52d/amp14.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/2gAMAwEAAhADEAAAAcyla1KcaEn/xAAcEAEAAgEFAAAAAAAAAAAAAAACAAEDERIhIjH/2gAIAQEAAQUCwHc7xmLhLrLvRL3/xAAXEQADAQAAAAAAAAAAAAAAAAABAhEQ/9oACAEDAQE/AWRibc//xAAYEQACAwAAAAAAAAAAAAAAAAABAhARIf/aAAgBAgEBPwFHUZUf/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERMQIhUZH/2gAIAQEABj8Cay4UOCW/CzR//8QAGxABAAICAwAAAAAAAAAAAAAAAQARITFBUWH/2gAIAQEAAT8hohq0FFxaDAhqecotDlHuRO5//9oADAMBAAIAAwAAABCzP//EABcRAQEBAQAAAAAAAAAAAAAAAAERAFH/2gAIAQMBAT8QnEnMCAXf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARYf/aAAgBAgEBPxAdWuyiqF//xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMUGBUf/aAAgBAQABPxBFBFA67MRj4rhtxAHzL+IhwR1XHC4bWpvAUtFrW/c//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;A fruitful session where developers engage with the AMP team on stage.&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6bd42a09ac4ccc1ae5bc215cfd2eb539/4acc0/amp14.jpg&quot;
+        srcset=&quot;/static/6bd42a09ac4ccc1ae5bc215cfd2eb539/e33f8/amp14.jpg 293w,
+/static/6bd42a09ac4ccc1ae5bc215cfd2eb539/d5ce0/amp14.jpg 585w,
+/static/6bd42a09ac4ccc1ae5bc215cfd2eb539/4acc0/amp14.jpg 1170w,
+/static/6bd42a09ac4ccc1ae5bc215cfd2eb539/2e52d/amp14.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;small&gt;&lt;i&gt;A fruitful session where developers engage with the AMP team on stage.&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;To sum up, with the introduction of these many new components in the AMP project to cater to the needs of the developers to build rich, interactive, and performant websites with good user experience, and the efforts in balancing customer satisfaction and reaping business revenue through AMP Ads, I am grateful to Google in their drive to take care of these many stakeholders needs, all at the same time.&lt;/p&gt;
+&lt;p&gt;I asked Paul Bakaus, what were his opinions when some people described AMP as a deviation from the web, as a closed ecosystem meant to divide itself from the regular webpages. Paul’s reply was insightful: the web has seen itself being abused/misused by people who capitalised on this vast-reaching and powerful platform for their own gain, at the expense of the general public users. AMP is trying to solve this by establishing rules that protect the user experience. Compared to Facebook’s Instant Articles and Apple News, AMP being an open source project, sets its sights to merge itself into the W3C standards, so AMP components will become native web components like some of the HTML5 DOM elements (e.g. &lt;code class=&quot;language-text&quot;&gt;&amp;lt;video&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;audio&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;input type=date&amp;gt;&lt;/code&gt;). This grand vision is awe-inspring to me.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0bac0a566d28d0762de509567a09f691/2e52d/amp15.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAECAwQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAePY2xnJE3//xAAaEAEBAAIDAAAAAAAAAAAAAAABAgASAyEx/9oACAEBAAEFApNqeNk9yUnG9oa7/8QAGBEAAgMAAAAAAAAAAAAAAAAAARAREiH/2gAIAQMBAT8BN5xf/8QAGBEAAgMAAAAAAAAAAAAAAAAAARAREiH/2gAIAQIBAT8BFY1f/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAEQERIh/9oACAEBAAY/AqRcaUcP/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFRcf/aAAgBAQABPyHvQ4NIhQZw0hzHu4ZJ4U8P/9oADAMBAAIAAwAAABDkP//EABgRAAIDAAAAAAAAAAAAAAAAAAABETFx/9oACAEDAQE/EEtKDT//xAAWEQEBAQAAAAAAAAAAAAAAAAABEQD/2gAIAQIBAT8Qdobnf//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExQVFhof/aAAgBAQABPxBqMwu+of8AQtO4AupfoFAa22JBeAaB8xiBx8T/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;amp15&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0bac0a566d28d0762de509567a09f691/4acc0/amp15.jpg&quot;
+        srcset=&quot;/static/0bac0a566d28d0762de509567a09f691/e33f8/amp15.jpg 293w,
+/static/0bac0a566d28d0762de509567a09f691/d5ce0/amp15.jpg 585w,
+/static/0bac0a566d28d0762de509567a09f691/4acc0/amp15.jpg 1170w,
+/static/0bac0a566d28d0762de509567a09f691/2e52d/amp15.jpg 1280w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here’s a toast to Google AMP team, and may the web be great again!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHP Conf Asia 2016 - a review]]></title><description><![CDATA[I got started in PHP back in 2010, when my school project required us to build a web application similar to Flickr. While handling most of…]]></description><link>https://gatsby-casper.netlify.com/php-conf-asia-2016-a-review/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/php-conf-asia-2016-a-review/</guid><pubDate>Thu, 05 Oct 2017 00:00:01 GMT</pubDate><content:encoded>&lt;p&gt;I got started in PHP back in 2010, when my school project required us to build a web application similar to Flickr. While handling most of the HTML/CSS stuffs, I was also greatly intrigued by how fast my friend could build the web portal in half an hour (thanks to Codeigniter) In 2011, another friend of mine “jio”-ed me to attend the PHP meetup held at Paypal, and I got to learn a whole lot more about PHP than I did on my own.&lt;/p&gt;
+&lt;p&gt;Now 2016, I attended my first PHP Conf Asia, and am totally blown away by the maturity, enthusiasm and wisdom emanating from the speakers and attendees I met.&lt;/p&gt;
+&lt;h2&gt;Tutorial Day&lt;/h2&gt;
+&lt;p&gt;Tutorial day was a very valuable day. Getting hands on writing Behat tests with Adam Englander, his introduction to Behavior Driven Development (BDD), his sharing of the challenges and experiences he had while deliberating with his colleagues, figuring out what should be the right way to do BDD, impressed me very much. As he related later, when we were chatting after the lessons, BDD is more than just programming, it’s also an art to him — a journey of discovering the right path. So zen, much truth.&lt;/p&gt;
+&lt;p&gt;Ben Marks also gave an insightful introduction to Magento 2, explaining how it has matured since Magento 1, embracing OOP (Object Oriented Programming) and PSRs (PHP Standard Regulations). One interesting note he mentioned, which he acknowledged that it could next be improved, is the re-compiling time the framework takes during development — it can be noticeably long currently, whenever a developer writes code and had to wait for the code to be compiled before it is being rendered on the browser. I tend to agree with him too, as I feel the same way while developing with Drupal.&lt;/p&gt;
+&lt;p&gt;After tutorial day, there was the PHP meetup in the evening! Davey Shafik from Akamai, Harald Zeithofer from Dynatrace and Dion Hulse from Automattic were in the building to rock the house down. It was an illuminating experience, hearing them talk about HTTP/2, performance tuning and scaling, and how Wordpress changes the world.&lt;/p&gt;
+&lt;h2&gt;Conference Days&lt;/h2&gt;
+&lt;p&gt;The conference days were equally good, if not better. I like the idea of having a feedback board for attendees to pen their thoughts down, on things that were done well, or if not, how they could be done better. Hosts Michael and Cherie were very receptive to the feedback, especially for Cherie who readily adjusted to give more time for the audience to formulate their thoughts during each post talk’s Q-n-A. Talking about practising Agile development, this is Agile emcee hosting!&lt;/p&gt;
+&lt;p&gt;Etsy’s senior engineer, Premshree Pillai’s presentation was interesting, introducing to us how Etsy fosters innovation with principles such as experimentation, optimizing for autonomy, quick iteration and low MTTR (mean time to recovery) to name a few. And to support these principles, they built tools and workflows in-house to facilitate their daily code check-ins, testing and deployment. I am really impressed with the tools being elaborated, and they are on Github! I should really check them out soon. So much to learn from them.&lt;/p&gt;
+&lt;p&gt;Another talk which got me amused was by Timothy Chandler. He gave us a lowdown on his journey with HHVM and Hack, the PHP variant built by Facebook, how it can be different from PHP with its stricter syntax, but in exchange for better performance. Then he walked slightly away from the rostrum, and related, down-to-earth manner, how he and his boss, “we’re Australians, we drink”, and how he wrote a CMS with Hack ground up over many beers and while drunk. Of course, he realised he could not really understand what he wrote that night afterwards, and advised not to follow in his footsteps, but heck, I should just try that some day. I mean, this is just so geekily cool.&lt;/p&gt;
+&lt;p&gt;The lightning talks were well done too, I feel it was a good avenue for new speakers to share with us their learnings. Most notably Woo Huiren and April Kwong’s talks. Huiren’s youth (he is 19) and enthusiasm to contribute to the open source community is really laudable, and April’s sharing of her learning journey with Laravel was insightful too. She is also in the PHP Women’s group, an initiative to get more ladies on board, as well as to connect with ladies in the PHP arena. I also learned a good amount of neat tips and tricks from the rest of the speakers too.&lt;/p&gt;
+&lt;p&gt;Other intriguing talks included playing sounds and beats using PHP, and machine learning with PHP! Through these talks, I see how besides being the regular server side language, PHP can be fun and awesome too!&lt;/p&gt;
+&lt;p&gt;The ending keynote by Samantha Quiñones was also an impactful one. It touched the heartstrings at some parts, of how our perception of technology has evolved since the earlier times, when we know the internet has to come from some telephone lines, to the expectation that it should just exist in thin air. “Access to the internet is now a necessity, just like how access to food and water is”, got me really thinking. “The heroes of our revolution will not sit in boardrooms,” goes the quote on her slide deck, as she encouraged us to take all the lessons we learned the past few days and put it into practice at work. Spread the knowledge to others, hone the knowledge and improve ourselves. “It’s easy to learn to code. But to be a programmer also means about lifelong commitment to learn and grow.” So, soo true.&lt;/p&gt;
+&lt;h2&gt;And it’s a wrap!&lt;/h2&gt;
+&lt;p&gt;All in all, the three days of meeting with passionate folks, experienced and budding developers, the PHP women group, the Javascript folks ;), were a wonderful experience. Cheers to another good year of PHP Conf Asia, and many more to come!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;— originally published on Aug 26th, 2016&lt;/em&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
